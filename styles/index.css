@@ -6,13 +6,6 @@
     background-image: url(../assests/newsletter-bg.png);
     background-repeat: no-repeat;
 }
-
-.inputfield{
-    height: 32px;
-    border-radius: 5px;
-    border: 1px solid #000;
-}
-
 .fs-12 {
     font-size: 12px;
 }
