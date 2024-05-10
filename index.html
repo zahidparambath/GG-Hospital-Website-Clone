@@ -33,7 +33,7 @@
     <nav class="navbar navbar-expand-lg mx-5">
         <div class="container-fluid d-flex justify-content-between">
             <div>
-                <a class="navbar-brand" href="#"><img src="assests/logo.png" /></a>
+                <a class="navbar-brand" href="#home"><img src="assests/logo.png" /></a>
             </div>
             <div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,39 +44,34 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active " aria-current="page" href="#">Home</a>
+                            <a class="nav-link active " aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Patient Care</a>
+                            <a class="nav-link active" aria-current="page" href="#patient_care">Patient Care</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="#department" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Department
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Preventive Checkup Directory</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Academics & Reasearch</a>
+                            <a class="nav-link active" aria-current="page" href="#academics_and_reasearch">Academics & Reasearch</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">News & Media</a>
+                            <a class="nav-link active" aria-current="page" href="#news_and_media">News & Media</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Careers</a>
+                            <a class="nav-link active" aria-current="page" href="#careers">Careers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                            <a class="nav-link active" aria-current="page" href="#contact_us">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -84,11 +79,398 @@
         </div>
     </nav>
 
-    <div class="mx-5" id="home">
-        <div>
-            <img class="home-image" src="assests/home-image.png" alt="home-image">
+    <div class="d-flex mx-5">
+        <div class="d-flex justify-content-center align-items-center w-50 bg-home">
+            <div class="d-flex flex-column w-60">
+                <h1 class="fw-bolder">Love & Care to Humanity</h1>
+                <p>Fastest-Growing Multi Speciality Hospital in South Kerala</p>
+                <div>
+                    <button class="btn btn-custom w-50 me-3 text-white"><span class="fs-14">Book an appointment</span></button>
+                    <a class="text-dark"><i class="bi bi-play-circle-fill pe-2 fs-24"></i>Doctors Talk</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-50">
+            <img class="w-100" src="assests/home-image.png" alt="home-image">
         </div>
     </div>
+
+    <!-- home section -->
+    <div class="d-flex justify-content-center" id="home">
+        <div class="d-flex flex-column mx-5 py-3 rounded nmt-1 w-75 bg-light">
+            <h4 class="ps-2">Book an Appointment</h4>
+                <div class="d-flex flex-wrap justify-content-around py-2">
+                    <input class="w-30 border-1 h-32 border-dark rounded p-2" type="text" placeholder="Full Name">
+                    <input class="w-30 border-1 h-32 border-dark rounded p-2" type="number" placeholder="Phone Number">
+                    <input class="w-30 border-1 h-32 border-dark rounded p-2" type="date" placeholder="Select Date">
+                </div>
+                <div class="d-flex flex-wrap justify-content-around py-2">
+                    <select class="w-30 h-32 border-1 border-dark rounded">
+                        <option class="text-muted p-2">Department</option>
+                        <option>Genral Medicine</option>
+                        <option>Obstetris and Gynaecology</option>
+                        <option>ENT</option>
+                        <option>Emergency Medicine</option>
+                        <option>Dermatology</option>
+                    </select>
+                    <select class="w-30 h-32 border-1 border-dark rounded">
+                        <option>Doctor</option>
+                    </select>
+                    <button class="btn-custom w-30 h-32 border-0 rounded text-white">Book an Appointment</button>
+                </div>
+        </div>
+    </div>
+
+
+    <!-- our departments section -->
+    <div class="mx-5 pb-5">
+        <div class="d-flex justify-content-between py-5">
+            <h2>Our Department</h2>
+            <div>
+                <button class="border-0 bg-white px-2" data-bs-target="#carouselSlides" data-bs-slide="previous">
+                    <i class="bi bi-arrow-left fs-24"></i>
+                </button>
+                <button class="border-0 bg-white fs-24" data-bs-target="#carouselSlides" data-bs-slide="next">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        <div id="carouselSlides" class="carousel slide position-relative" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assests/D1.jpg" class="d-block w-100 pb-3" alt="D1">
+                            <div class="description">
+                                <h3>General Medicine</h3>
+                                <p>GG Hospital is honored with highly skilled Internists who are best at delivering
+                                    their valuable services...</p>
+                                <a href="" class="text-primary">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img src="assests/D2.jpg" class="d-block w-100 pb-3" alt="D2">
+                            <h3>Obstetrics and Gynaecology</h3>
+                            <p>Welcome to GG Hospital Obstetrics and Gynaecology Department, where we prioritize the
+                                health and saf...</p>
+                            <a href="" class="text-primary">Read More</a>
+                        </div>
+                        <div class="col-4">
+                            <img src="assests/D3.jpg" class="d-block w-100 pb-3" alt="D3">
+                            <h3>ENT</h3>
+                            <p>Internists strive to provide compassion of the highest quality to their patients w
+                                promo...</p>
+                            <a href="" class="text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assests/D4.jpg" class="d-block w-100 pb-3" alt="D4">
+                            <h3>Orthopaedics</h3>
+                            <a href="" class="text-primary">Read More</a>
+                        </div>
+                        <div class="col-4">
+                            <img src="assests/D5.jpg" class="d-block w-100 pb-3" alt="D5">
+                            <h3>Emergency Medicine</h3>
+                            <p>We have a state-of-the-art emergency department manned by qualified and trained emergency
+                                physicians...</p>
+                            <a href="" class="text-primary">Read More</a>
+
+                        </div>
+                        <div class="col-4">
+                            <img src="assests/D6.jpg" class="d-block w-100 pb-3" alt="D6">
+                            <h3>Pediatrics Cardiology</h3>
+                            <p>Internists strive to provide compassionate care of the highest quality to their patients
+                                while promoting healthy lifestyles...</p>
+                            <a href="" class="text-primary">Read More</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- why gg hospital section -->
+    <div class="bg-why-gg-hospital d-flex mx-5">
+        <div class="w-50">
+            <img src="assests/why-gg-image" alt="why-gg-hospital">
+        </div>
+        <div class="d-flex flex-column w-50 justify-content-center mx-5 px-5 py-5">
+            <h3 class="my-4">Why GG Hospital</h3>
+            <div class="d-flex">
+                <i class="bi bi-check-circle px-3 text-success"></i>
+                <p>Multi-super speciality hospital in South Kerala</p>
+            </div>
+            <div class="d-flex my-2">
+                <i class="bi bi-check-circle px-3 text-success"></i>
+                <p>Achieved the uinique reputation</p>
+            </div>
+            <div class="d-flex my-2">
+                <i class="bi bi-check-circle px-3 text-success"></i>
+                <p>Multi-super speciality hospital in South Kerala</p>
+            </div>
+            <div class="d-flex my-2">
+                <i class="bi bi-check-circle px-3 text-success"></i>
+                <p>Multi-super speciality hospital in South Kerala</p>
+            </div>
+            <div class="d-flex my-2">
+                <i class="bi bi-check-circle px-3 text-success"></i>
+                <p>Multi-super speciality hospital in South Kerala</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- meet our specialist section -->
+
+    <div class="d-flex flex-column my-5 mx-5 pt-40">
+        <div class="d-flex justify-content-center">
+            <h3>Meet Our Specialist</h3>
+        </div>
+        <div class="d-flex justify-content-center">
+            <p class="text-muted">We have the best doctors in GG</p>
+        </div>
+        <div class="row w-100">
+            <div class="col-3">
+                <img src="assests/doc1-image.png " class="w-100" alt="doc1">
+                <h4 class="d-flex justify-content-center mt-4">Lisha Powel</h4>
+                <p class="d-flex justify-content-center text-muted">ENT Specialist</p>
+            </div>
+            <div class="col-3">
+                <img src="assests/doc2-image.png" class="w-100" alt="doc2">
+                <h4 class="d-flex justify-content-center mt-4">Chris Nelson</h4>
+                <p class="d-flex justify-content-center text-muted">Cardiologist</p>
+            </div>
+            <div class="col-3">
+                <img src="assests/doc3-image.png" class="w-100"alt="doc3">
+                <h4 class="d-flex justify-content-center mt-4">Linda Stapleton</h4>
+                <p class="d-flex justify-content-center text-muted">Orthopaedic Surgeon</p>
+            </div>
+            <div class="col-3">
+                <img src="assests/doc4-image.png" class="w-100" alt="doc4">
+                <h4 class="d-flex justify-content-center mt-4">Sandra John</h4>
+                <p class="d-flex justify-content-center text-muted">Psychatrists</p>
+            </div>
+             
+        </div>
+        <div class="d-flex justify-content-center my-5">
+            <button type="button" class="btn btn-custom text-white ">View All</button>
+        </div>
+    </div>
+
+    <!-- facilities and activities section -->
+    <div class="mx-5 my-5">
+        <div class="row py-5">
+            <div class="col-11 d-flex justify-content-center">
+                <h2 class="d-inline ps-5 ms-5">Facilities & Activities</h2>
+            </div>
+            <div class="col-1">
+                <button class="border-0 bg-white px-2" data-bs-target="#carouselSlide2" data-bs-slide="previous">
+                    <i class="bi bi-arrow-left fs-24"></i>
+                </button>
+                <button class="border-0 bg-white fs-24" data-bs-target="#carouselSlide2" data-bs-slide="next">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        <div id="carouselSlide2" class="carousel slide position-relative" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assests/facility1-image.png" class="d-block w-100" alt="D1">
+                        </div>
+                        <div class="col-4">
+                            <img src="assests/facility2-image.png" class="d-block w-100" alt="D2">
+                        </div>
+                        <div class="col-4">
+                            <img src="assests/facility3-image.png" class="d-block w-100" alt="D3">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assests/facility1-image.png" class="d-block w-100" alt="D4">
+                        </div>
+                        <div class="col-4">
+                            <img src="assests/facility2-image.png" class="d-block w-100" alt="D5">
+                        </div>
+                        <div class="col-4">
+                            <img src="assests/facility3-image.png" class="d-block w-100" alt="D6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- you may be interested section  -->
+
+<div class="mx-5">
+    <div class="row py-5">
+        <div class="col-11 d-flex justify-content-center">
+            <h2 class="d-inline ps-5 ms-5">You may be Interested</h2>
+        </div>
+        <div class="col-1">
+            <button class="border-0 bg-white px-2" data-bs-target="#carouselSlide2" data-bs-slide="previous">
+                <i class="bi bi-arrow-left fs-24"></i>
+            </button>
+            <button class="border-0 bg-white fs-24" data-bs-target="#carouselSlide2" data-bs-slide="next">
+                <i class="bi bi-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+    <div id="carouselSlide3" class="carousel slide position-relative" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="assests/interest1-image.png" class="d-block w-100 pb-3" alt="i1">
+                            <h3>Hepatobiliary Surgery</h3>
+                            <p> The Hepatobiliary and Transplantology Unit of GG Hospital offers a comprehensive... <a href="">Read More</a></p>
+                    </div>
+                    <div class="col-4">
+                        <img src="assests/interest2-image.png" class="d-block w-100 pb-3" alt="i2">
+                        <h3>Hepatobiliary Surgery</h3>
+                            <p> The Hepatobiliary and Transplantology Unit of GG Hospital offers a comprehensive... <a href="">Read More</a></p>
+                    </div>
+                    <div class="col-4">
+                        <img src="assests/interest3-image.png" class="d-block w-100 pb-3" alt="i3">
+                        <h3>Hepatobiliary Surgery</h3>
+                            <p> The Hepatobiliary and Transplantology Unit of GG Hospital offers a comprehensive... <a href="">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="assests/interest1-image.png" class="d-block w-100 rounded-1 pb-3" alt="i4">
+                        <h3>Hepatobiliary Surgery</h3>
+                        <p> The Hepatobiliary and Transplantology Unit of GG Hospital offers a comprehensive... <a href="">Read More</a></p>
+                    </div>
+                    <div class="col-4">
+                        <img src="assests/interest2-image.png" class="d-block w-100 rounded-1 pb-3" alt="i5">
+                        <h3>Hepatobiliary Surgery</h3>
+                            <p> The Hepatobiliary and Transplantology Unit of GG Hospital offers a comprehensive... <a href="">Read More</a></p>
+
+                    </div>
+                    <div class="col-4">
+                        <img src="assests/interest3-image.png" class="d-block w-100 rounded-1 pb-3" alt="i6">
+                        <h3>Hepatobiliary Surgery</h3>
+                            <p> The Hepatobiliary and Transplantology Unit of GG Hospital offers a comprehensive... <a href="">Read More</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- newsletter section -->
+
+<div class="bg-news-letter bg-home py-5 vh-100 nmt-2 d-flex flex-column justify-content-center">
+    <div class="bg-light mx-5 d-flex justify-content-center py-5 news-letter mt-150">
+        <div class="w-50">
+            <h4 class="w-50 ps-5 ms-5 fw-bolder">Susbscribe our Newsletter Sign up</h4>
+        </div>
+        <div class="w-50 d-flex justify-content-end">
+            <div class="me-5 pe-5">
+                <div>
+                    <input type="email" placeholder="Enter your mail id" class="py-1 mt-2 border-0 bg-light">
+                    <button type="button" class="btn btn-custom text-white ">Subscribe</button>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer section -->
+    <div class="d-flex flex-column px-5 bg-light fs-12 pt-5">
+        <div class="row">
+            <div class="col-6 ps-5">
+                <div>
+                    <img src="assests/logo.png" alt="">
+                </div>
+                <div class="d-flex flex-column">
+                    <p class="w-75">GG Hospital is the flagship hospital of the sree Gokulam Group of companies. Our journey started on 27th January 2016 for the common people in Trivandrum
+                </div>
+            </div>
+            <div class="col-3 d-flex flex-column pt-3">
+                <div>
+                    <h4>About GG</h4>
+                </div>
+                <div class="d-flex">
+                    <div class="d-flex flex-column">
+                        <a href="" class="text-decoration-none text-dark m-2 ms-0">About Us</a>
+                        <a href="" class="text-decoration-none text-dark m-2 ms-0">Hospital</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a href="" class="text-decoration-none text-dark m-2 ms-0">Academic</a>
+                        <a href="" class="text-decoration-none text-dark m-2 ms-0">Department</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-3 d-flex flex-column pt-3">
+                <div>
+                    <h4>Legal</h4>
+                </div>
+                <div class="d-flex">
+                    <div class="d-flex flex-column ">
+                        <a href="" class="text-decoration-none text-dark m-2 ms-0">Privacy Policy</a>
+                        <a href="" class="text-decoration-none text-dark m-2 ms-0">Terms of Service</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a href="" class="text-decoration-none text-dark m-2 ms-0">Documentation</a>
+                        <a href="" class="text-decoration-none text-dark m-2 ms-0">Site Map</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-around">
+            <div class="d-flex">
+                <i class="bi bi-house-door me-1"></i>
+                <div class="d-flex flex-column">
+                    <p class="text-muted">Medical College, Pattom Kumarapuram Rd, </p>
+                    <p class="text-muted">Murinjapalam, Thiruvananthapuram, Kerala 695011</p>
+                </div> 
+            </div >
+            <div class="d-flex">
+                <i class="bi bi-telephone me-1"></i>
+                <div class="d-flex flex-column">
+                    <p>0471 8764754</p>
+                    <p>0471 8764754</p>
+                </div>
+            </div>
+            <div class="d-flex">
+                <i class="bi bi-envelope me-1"></i>
+                <div class="d-flex flex-column">
+                    <p>gghospitalphkpl@gmail.com</p>
+                    <p>edoffice@gg-hospital.com</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="fw-bolder">We are on Social Media</h4>
+                <div class="d-flex justify-content-around fs-24">
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-youtube"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-facebook"></i>
+                </div>
+            </div>
+        </div>
+        <p class="d-flex justify-content-center align-items-center mt-5 text-muted">&copy; 2023 GG Hospital</p>
+    </div>
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js "></script>
+<script src="script/script.js"></script>
 
 </html>

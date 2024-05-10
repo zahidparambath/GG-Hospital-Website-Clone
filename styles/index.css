@@ -2,29 +2,90 @@
     padding: 0;
     margin: 0;
 }
+.news-letter{
+    background-image: url(../assests/newsletter-bg.png);
+    background-repeat: no-repeat;
+}
 
-/* home section styling */
- .home-image{
-    height: auto;
-    width: 100%;
-    
- }
+.inputfield{
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
 
 .fs-12 {
     font-size: 12px;
 }
 
+.fs-14 {
+    font-size: 14px;
+}
 
 .fs-16 {
     font-size: 16px;
 }
 
-
 .fs-20 {
     font-size: 20px;
 }
 
-
 .fs-24 {
     font-size: 24px;
 }
+
+.bg-white{
+    background-color: #fff;
+}
+
+.bg-home {
+    background-color: #e9f6fe;
+}
+
+.bg-why-gg-hospital{
+    background-color: #e9f2ff;
+}
+
+.bg-button {
+    background-color: #17c1a3;
+}
+
+.h-32{
+    height: 32px;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.pt-40{
+    padding-top: 40px;
+}
+
+.mt-150{
+    margin-top: 150px;
+}
+
+.nmt-1 {
+    margin-top: -100px;
+}
+
+.nmt-2{
+    margin-top: -250px;
+}
+
+button.btn-custom{
+    background-color: #17c1a3;
+}
+
